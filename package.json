@@ -1,0 +1,14 @@
+{
+  "name": "calculadora-medias",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Atividade de DevOps: Gitflow e GitHub Actions",
+  "scripts": {
+    "check": "node --check src/calculadora.js && node --check src/app.js && node --check scripts/build.cjs",
+    "build": "node scripts/build.cjs",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

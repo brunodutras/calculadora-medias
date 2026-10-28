@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+:root { font-family: Inter, system-ui, sans-serif; color: #18332d; background: #f1f5ef; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at 90% 10%, #ddebd7 0, transparent 55%); }
+main { max-width: 620px; margin: auto; padding: 44px 24px; }
+.marca { display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 800; letter-spacing: 2px; margin-bottom: 52px; }
+.simbolo { background: #244c40; color: #d8efb2; border-radius: 10px; padding: 5px 12px; font-size: 26px; }
+.etiqueta { font-size: 10px; font-weight: 750; letter-spacing: 2px; color: #54755d; }
+h1 { font-size: clamp(36px, 7vw, 50px); line-height: 1.08; letter-spacing: -2px; margin: 18px 0; }
+.introducao { color: #5c6d62; font-size: 15px; margin-bottom: 30px; }
+.cartao { background: white; border: 1px solid #dbe5da; border-radius: 22px; padding: 30px; box-shadow: 0 15px 40px #244c4009; }
+.notas { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+label { display: block; font-size: 13px; font-weight: 650; margin-bottom: 10px; }
+input { width: 100%; padding: 16px; background: #f7f9f6; border: 1px solid #d4dfd4; border-radius: 10px; font: inherit; font-size: 20px; color: #18332d; }
+input:focus-visible, button:focus-visible { outline: 3px solid #91b961; outline-offset: 3px; }
+small { display: block; color: #66776a; font-size: 11px; margin: 8px 0 24px; }
+button { cursor: pointer; font: inherit; font-size: 14px; font-weight: 650; border: none; border-radius: 10px; background: #244c40; color: white; padding: 17px; width: 100%; }
+button:hover { background: #326250; }
+button span { float: right; }
+button.limpar { background: transparent; color: #526459; padding: 14px; font-size: 12px; }
+#mensagem { color: #a12525; font-size: 13px; margin: 0; }
+#mensagem:not(:empty) { margin: 8px 0 20px; }
+#resultado { padding: 20px; margin: 8px 0 24px; border-radius: 12px; background: #edf5e6; }
+#resultado[data-situacao="Reprovado"] { background: #fff0e5; }
+.rotulo { display: block; font-size: 10px; letter-spacing: 1px; }
+#media { display: block; font-size: 38px; margin: 6px 0; overflow-wrap: anywhere; }
+#situacao { font-weight: 650; font-size: 14px; }
+.regra { border-top: 1px solid #e8ede5; padding-top: 20px; color: #637166; font-size: 12px; line-height: 1.8; }
+footer { text-align: center; font-size: 10px; color: #617266; padding-top: 25px; }
+footer span { margin: 0 7px; }
+@media (max-width: 420px) { main { padding: 26px 18px; } .cartao { padding: 22px; } .notas { grid-template-columns: 1fr; gap: 0; } .marca { margin-bottom: 35px; } }
