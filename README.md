@@ -3,6 +3,15 @@
 Projeto acadêmico para demonstrar Gitflow e uma pipeline CI/CD no GitHub Actions.
 Calcula a média de duas notas entre 0 e 10. Aprova com média maior ou igual a 7; abaixo disso, reprova. Essa é uma regra didática do projeto, não uma regra oficial da instituição.
 
+## Versão 1.0.0
+
+Primeira versão com cálculo da média de duas notas, validação das entradas e publicação automatizada no GitHub Pages.
+
+- **Cálculo:** média aritmética de duas notas entre 0 e 10, com aprovação a partir de 7, antes de arredondamentos.
+- **Validação:** aceita vírgula ou ponto decimal e rejeita campos vazios, textos e valores fora do intervalo.
+- **Mensagens de resultado:** exibe “Aprovado! Parabéns pelo resultado.” ou “Reprovado. Continue estudando!”, conforme a média.
+- **Pipeline:** o GitHub Actions verifica a sintaxe, prepara o site e executa os testes sobre o artefato gerado. A publicação ocorre somente na `main`, após os testes passarem e fora de Pull Requests.
+
 ## Executar
 
 Para usar a calculadora, abra `index.html` no navegador. Não precisa instalar dependências.
