@@ -12,7 +12,9 @@ formulario.addEventListener('submit', (evento) => {
       formulario.elements.nota1.value, formulario.elements.nota2.value
     );
     mediaTexto.textContent = media.toLocaleString('pt-BR', { maximumFractionDigits: 10 });
-    situacaoTexto.textContent = situacao;
+    situacaoTexto.textContent = situacao === 'Aprovado'
+      ? 'Aprovado! Parabéns pelo resultado.'
+      : 'Reprovado. Continue estudando!';
     resultado.dataset.situacao = situacao;
     resultado.hidden = false;
   } catch (erro) {
