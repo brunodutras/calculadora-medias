@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,17 +9,20 @@
   <script src="src/calculadora.js" defer></script>
   <script src="src/app.js" defer></script>
 </head>
+
 <body>
   <main>
     <div class="marca"><span class="simbolo">∑</span> MÉDIA FÁCIL</div>
     <div class="etiqueta">PROJETO ACADÊMICO · DEVOPS</div>
     <h1>Sua média,<br>sem complicação.</h1>
-    <p class="introducao">Informe suas duas notas e confira o resultado.</p>
+    <p class="introducao">Informe duas notas de 0 a 10 e confira sua média.</p>
     <section class="cartao" aria-label="Calculadora">
       <form id="formulario" novalidate>
         <div class="notas">
-          <div><label for="nota1">Primeira nota</label><input id="nota1" name="nota1" type="text" inputmode="decimal" placeholder="Ex.: 8,5" required autocomplete="off"><small>De 0 a 10, inclusive</small></div>
-          <div><label for="nota2">Segunda nota</label><input id="nota2" name="nota2" type="text" inputmode="decimal" placeholder="Ex.: 7,0" required autocomplete="off"><small>De 0 a 10, inclusive</small></div>
+          <div><label for="nota1">Primeira nota</label><input id="nota1" name="nota1" type="text" inputmode="decimal"
+              placeholder="Ex.: 8,5" required autocomplete="off"><small>De 0 a 10, inclusive</small></div>
+          <div><label for="nota2">Segunda nota</label><input id="nota2" name="nota2" type="text" inputmode="decimal"
+              placeholder="Ex.: 7,0" required autocomplete="off"><small>De 0 a 10, inclusive</small></div>
         </div>
         <button type="submit">Calcular minha média <span aria-hidden="true">↗</span></button>
         <button class="limpar" type="reset">Limpar notas</button>
@@ -27,9 +31,11 @@
       <div id="resultado" aria-live="polite" aria-atomic="true" hidden>
         <span class="rotulo">SUA MÉDIA FINAL</span><strong id="media"></strong><span id="situacao"></span>
       </div>
-      <div class="regra"><span aria-hidden="true">ⓘ</span> Média = (nota 1 + nota 2) ÷ 2.<br>Aprovação com média igual ou superior a 7.</div>
+      <div class="regra"><span aria-hidden="true">ⓘ</span> Média = (nota 1 + nota 2) ÷ 2.<br>Aprovação com média igual
+        ou superior a 7.</div>
     </section>
     <footer>HTML, CSS e JavaScript <span>·</span> Gitflow + GitHub Actions</footer>
   </main>
 </body>
+
 </html>
